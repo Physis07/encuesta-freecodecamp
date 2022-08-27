@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(img/programar-920x515.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+h1 {
+  font-weight: 400;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#description {
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+}
+p {
+  font-size: 1.125rem;
+  color: white;
+}
+
+.containt {
+  margin: 25px;
+  border-radius: 5px;
+  background: #281e5d;
+  opacity: 0.8;
+  padding: 24px;
+  width: 50%;
+}
+
+.section-contained {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: auto;
+  padding: 8px;
+}
+
+.filas {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+label {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}

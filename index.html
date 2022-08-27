@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ENCUESTA</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+    <h1 id="tittle">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+  </header>
+    <form id="survey-form">
+    <section class="section-contained">
+      <div class="containt">
+          <div class="filas">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="filas">
+            <label for="email"> Email</label>
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="filas">
+            <label for="tentacles">Age(optional)</label>
+            <input
+              type="number"
+              id="number"
+              min="18"
+              max="55"
+              placeholder="Age"
+            />
+          </div>
+          <div class="filas">
+            <p>
+              Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+            <option disabled="" selected="" value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+          </div>
+          <div class="filas">
+          <p>Would you recommend freeCodeCamp to a friend?</p> 
+          <label >
+          <input type="radio" name="punto" value="" /> Definitely</label>
+          <label ><input type="radio" name="punto" value="" /> Maybe </label> 
+           <label >
+          <input type="radio" name="punto" value="" /> Not sure </label>
+          </div>
+            <div class="filas">
+          <p>What is your favorite feature of freeCodeCamp?</p> 
+          <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="openSource">Open Source</option>
+              </select>
+             </div>
+          <div class="filas">
+          <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+          <label>
+            <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects</label>
+            <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data Visualization</label>
+            <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox">Videos</label>
+            <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox">Forum</label>
+          </div>
+           <div class="filas">
+            <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+           </div>
+          <div class="filas">
+          <input type="submit" id="submit" class="submit-button"/>
+          </div>    
+         </section>
+          </div>
+        </form>
+  </body>
+</html>
