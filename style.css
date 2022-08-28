@@ -9,6 +9,10 @@ body {
   color: var(--color-white);
   margin: 0;
 }
+/* 
+  Porque esto, sabes porque se hace esto, mas bien me parece un copiar y pegar
+  Que problema tenas que usaste esta solucion
+ */
 body::before {
   content: "";
   position: fixed;
@@ -28,11 +32,19 @@ body::before {
   background-repeat: no-repeat;
   background-position: center;
 }
+/* Pues aqui se ve que copiaste y pegaste del ejemplo te dije que lo usaras como referencia
+  Tarea::
+  Medidas en css px rem vh % sus diferencias y cuando usarlas
+  Quiero un resumen en notion con la explicacion de los tamanos en css y cuando es mejor usar cada uno.
+  Asi de paso lo entiendes
+
+*/
 
 header {
   margin-top: 1.875rem;
   margin-bottom: 1.875rem;
 }
+/* Ya veo q usaste rem como te dio la gana en lugares si en otros no ?? */
 h1 {
   font-weight: 400;
   font-size: 35px;
@@ -53,7 +65,7 @@ p {
 .containt {
   margin: 25px;
   border-radius: 5px;
-  background: #281e5d;
+  background: var(--color-darkblue);
   opacity: 0.8;
   padding: 24px;
   width: 50%;
@@ -75,7 +87,7 @@ input {
   padding: 16px;
 }
 label {
-  color: white;
+  color: val(--color-white);
   display: flex;
   align-items: center;
   font-size: 1.125rem;
@@ -90,9 +102,23 @@ label {
   border-radius: 2px;
   cursor: pointer;
 }
+/* Bien por el uso de variables para reutilizacion de codigo, pero para que crearlas sino la vas a usar
+Tarea: Dode quiera que esten los colore cambia rpor variables como las modificaciones arriba
+*/
 :root {
   --color-white: #f3f3f3;
-  --color-darkblue: #1b1b32;
+  --color-darkblue: #281e5d;
   --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
   --color-green: #37af65;
 }
+
+/* Tarea::
+Cuando se cambia  a vista mobile el formulario no se ve bien portanto uso de responisve 
+par que se vea con ese fondo pero que se lleve todo el ancho del area movil asi se ven mas loc campos
+usar media queries o grid, 
+Buena opportunidad para aprender grid o demostrar q entendiste media queries
+
+Crear un branch con los arrgelos generales una vez q yo los revise, creas un branch para responsive-grid y otra responsive-query
+Asi de esa forma prubeas como lograrlo con las dos formas. 
+ver imagen adjunta responsive.png para que veas como debe quedar
+*/
