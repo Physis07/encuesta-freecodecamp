@@ -96,5 +96,5 @@ label {
   --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
   --color-green: #37af65;
 }
-@media screen (max-width: 360px;) {
+@media screen and (max-width: 360px) {
 }
