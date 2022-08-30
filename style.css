@@ -1,12 +1,13 @@
 * {
   margin: 0px;
 }
+
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  color: var(--color-white);
+  color: white;
   margin: 0;
 }
 body::before {
@@ -17,7 +18,7 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background: var(--color-darkblue);
+  background: darkblue;
   background-image: linear-gradient(
       115deg,
       rgba(58, 58, 158, 0.8),
@@ -30,8 +31,8 @@ body::before {
 }
 
 header {
-  margin-top: 1.875rem;
-  margin-bottom: 1.875rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 h1 {
   font-weight: 400;
@@ -46,7 +47,7 @@ h1 {
   text-align: center;
 }
 p {
-  font-size: 1.125rem;
+  font-size: 18px;
   color: white;
 }
 
@@ -68,7 +69,9 @@ input {
   width: auto;
   padding: 8px;
 }
-
+select {
+  padding: 8px;
+}
 .filas {
   display: flex;
   flex-direction: column;
@@ -78,14 +81,14 @@ label {
   color: white;
   display: flex;
   align-items: center;
-  font-size: 1.125rem;
-  margin-bottom: 0.5rem;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 .submit-button {
   display: block;
   width: 100%;
-  padding: 0.75rem;
-  background: var(--color-green);
+  padding: 12px;
+  background: #37af65;
   color: inherit;
   border-radius: 2px;
   cursor: pointer;
@@ -97,4 +100,86 @@ label {
   --color-green: #37af65;
 }
 @media screen and (max-width: 360px) {
+  * {
+    margin: 0px;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1;
+    color: white;
+    margin: 0;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: darkblue;
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(img/programar-920x515.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  header {
+    margin-top: 25px;
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-weight: 300;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  #description {
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+    color: white;
+  }
+  .containt {
+    margin: 15px;
+    border-radius: 3px;
+    background: #281e5d;
+    opacity: 0.8;
+    padding: 15px;
+    width: 50%;
+  }
+  .section-contained {
+    display: flex;
+    justify-content: center;
+  }
+  input {
+    width: auto;
+    padding: 2px;
+  }
+  select {
+    padding: 2px;
+  }
+  .filas {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+  }
+  label {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
 }
